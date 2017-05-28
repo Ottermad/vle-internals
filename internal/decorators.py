@@ -2,7 +2,7 @@ from functools import wraps
 
 from flask import abort, g
 
-from internal.exceptions import CustomError
+from .exceptions import CustomError
 
 
 def permissions_required(permissions):

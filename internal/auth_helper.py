@@ -9,7 +9,7 @@ class ProxiedUser:
 
     def headers_dict(self):
         return {
-            'School-Id': self.school_id,
-            'User-Id': self.id,
+            'School-Id': str(self.school_id),
+            'User-Id': str(self.id),
             'Permissions': ",".join([p for p in self.permissions])
         }
